@@ -40,7 +40,7 @@ body {
 .menuSection {
     margin: 10px;
     border: var(--border);
-    background-color: yellow;   
+    background-color: yellow;
 }
 
 .sectionTitle {
@@ -50,11 +50,12 @@ body {
     position: relative;
     font-size: 1.25em;
     width: 125px;
-    left: calc(100% - 125px);
+    float: right;
 }
 
 .sectionContent {
     padding: 10px;
+    clear: both;
 }
 
 @media (min-width: 992px){
