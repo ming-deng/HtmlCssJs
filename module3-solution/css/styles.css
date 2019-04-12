@@ -76,7 +76,6 @@ nav {
 }
 
 #collapsable-nav li {
-    text-align: center;
     border-bottom: var(--border);
 }
 
