@@ -1,0 +1,111 @@
+:root {
+    --border: 1px solid black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: bisque;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 1.75em;
+    margin: 10px 10px 0px 10px;
+}
+
+.sections{
+    padding: 10px;
+    min-width: 175px;
+}
+
+.section:nth-child(1) .sectionTitle {
+    background-color: coral;
+}
+
+.section:nth-child(2) .sectionTitle {
+    background-color: palevioletred;
+}
+
+.section:nth-child(3) .sectionTitle {
+    background-color: lime;
+}
+
+.menuSection {
+    border: var(--border);
+    background-color: yellow;
+    margin: 10px 0px 10px;
+}
+
+.sectionTitle {
+    border-bottom: var(--border);
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.sectionContent {
+    padding: 10px;
+    clear: both;
+    min-height: 500px;
+}
+
+nav {
+    background-color: #8a6d3b;
+    border-bottom: var(--border);
+    border-top: var(--border);
+}
+
+.navbar-brand {
+    color: white;
+}
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-dark .navbar-toggler:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#collapsable-nav ul {
+    background-color: rgba(138,109,59,0.7);
+}
+
+#collapsable-nav li {
+    text-align: center;
+    border-bottom: var(--border);
+}
+
+#collapsable-nav li:hover {
+    background-color: rgba(255,255,255,0.5);
+}
+
+#collapsable-nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.section a {
+    display: block;
+    text-align: center;
+}
+
+@media (min-width: 577px){
+    .sectionContent:before {
+        content: "\2605 Make viewport narrower to see Navigation Button on top! \2605";
+    }
+
+    #collapsable-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .sectionContent:before {
+        content: "\2605 Navigation Button should be on upper right corner \2605";
+    }
+}
